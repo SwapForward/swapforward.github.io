@@ -107,7 +107,7 @@
           <h1 class="title is-2 publication-title">Latent Swap Joint Diffusion for Long-Form Audio Generation</h1>
           <div class="is-size-5">
             <span class="author-block">
-              <b>Anonymous Submission</b>
+              <b>Anonymous</b>
             </span>
           </div>
           <!-- <div class="column has-text-centered">
@@ -206,9 +206,545 @@
         </div>
         </div>
       <hr>
+  
 
+     <!-- audio -->
+     
+     <h3 class="title is-3">Comparison</h3>
+     <div class="container is-max-desktop full-panorama-wrap">
+   
+       <div class="three-button" aria-label="Button group with toggle">
+           <div class="pp-btn indoor"> 
+               <button class="btn btn-outline-dark "  data-section-id="t11">Soundscape & Sound Effect</button>
+           </div>
+           <div class="pp-btn ciy">
+               <button class="btn btn-outline-dark   "  data-section-id="t12" >Music</button>
+           </div>
+           <div class="pp-btn nature">
+               <button class="btn btn-outline-dark   " data-section-id="t13" >Panorama</button>
+           </div>
+       </div>    
+       
+       <!-- Audio -->
+       <div class="vr-image-wrap"  >
+         <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
+           <tbody>
+           
+             <tr style="padding: 0px;border: none;">    
+               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>The continuous gurgling sound of bubbles in the water.</div>
+                <hr>
+                
+                 <div>SaFa (Ours)</div>
+                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                     <img src="media\audio\compare_audio\SaFa\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
+                 </figure>
+                 <audio controls="controls" style="width: 100%; margin-top: 0;">
+                   <source src="media\audio\compare_audio\SaFa\The_continuous_gurgl.wav" />Your browser does not support the audio element.
+                 </audio>
+               </td>
+              
+               <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>Casino Ambience, electronic slot machines.</div>
+                <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_audio\SaFa\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_audio\SaFa\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+             </tr>
+  
+             
+             
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                
+                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_audio\MD\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_audio\MD\The_continuous_gurgl.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+  
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\MD\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\MD\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            </tr>
+
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                
+                <div>Movie Gen (MD*) [Meta 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_audio\MD_tri\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_audio\MD_tri\The_continuous_gurgl.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+  
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>Movie Gen (MD*) [Meta 2024]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\MD_tri\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\MD_tri\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            </tr>
+  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024] </div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_audio\MAD\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_audio\MAD\The_continuous_gurgl.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+  
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024] </div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\MAD\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\MAD\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            </tr>
+  
+  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <br>
+               <div>The audience's enthusiastic and passionate cheers and loud whistles in the stadium.</div>
+               <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_audio\SaFa\The_audience's_enthu.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_audio\SaFa\The_audience's_enthu.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+             
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <br>
+               <div>The sound of waves crashing on the beach, with distant kids playing ...</div>
+               <hr>
+               <div>SaFa (Ours)</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\SaFa\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\SaFa\Someone_is_Whistling.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            </tr>
+  
+            
+            <tr style="padding: 0px;border: none;">    
+             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               
+               <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\MD\The_audience's_enthu.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\MD\The_audience's_enthu.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+  
+             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+              <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_audio\MD\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_audio\MD\Someone_is_Whistling.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+           </tr>
+
+           <tr style="padding: 0px;border: none;">    
+            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+              
+              <div>Movie Gen (MD*) [Meta 2024]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_audio\MD_tri\The_audience's_enthu.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_audio\MD_tri\The_audience's_enthu.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+ 
+            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+             <div>Movie Gen (MD*) [Meta 2024]</div>
+             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                 <img src="media\audio\compare_audio\MD_tri\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
+             </figure>
+             <audio controls="controls" style="width: 100%; margin-top: 0;">
+               <source src="media\audio\compare_audio\MD_tri\Someone_is_Whistling.wav" />Your browser does not support the audio element.
+             </audio>
+           </td>
+          </tr>
+  
+           <tr style="padding: 0px;border: none;">    
+             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024] </div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_audio\MAD\The_audience's_enthu.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_audio\MAD\The_audience's_enthu.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+  
+             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+              <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024] </div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_audio\MAD\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_audio\MAD\Someone_is_Whistling.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+           </tr>
+   
+           </tbody>
+         </table>
+       </div> 
+  
+        <!-- Music -->
+       <div class="vr-image-wrap"  >
+        <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
+          <tbody>
+          
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               <div>Drum and bass track with rapid beats and energetic bass lines.</div>
+               <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s.png" width="100%" height="100px" class="center" />
+                </figure>
+                <audio controls="controls" style="width: 100%; margin-top: 0;">
+                  <source src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s.wav" />Your browser does not support the audio element.
+                </audio>
+              </td>
+             
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>Smooth, soulful saxophone in a relaxed jazz tune for quiet evenings.</div>
+               <hr>
+               <div>SaFa (Ours)</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_music\SaFa\Smooth,_soulful_saxo_4x10.24s.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_music\SaFa\Smooth,_soulful_saxo_4x10.24s.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            </tr>
+  
+            
+            <tr style="padding: 0px;border: none;">    
+             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               
+               <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+  
+             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+              <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_music\MD\Smooth,_soulful_saxo_4x10.24s.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_music\MD\Smooth,_soulful_saxo_4x10.24s.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+           </tr>
+  
+           <tr style="padding: 0px;border: none;">    
+             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+  
+             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+              <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+           </tr>
+  
+  
+           <tr style="padding: 0px;border: none;">    
+             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+               <br>
+              <div>A modern synthesizer creating futuristic soundscapes.</div>
+              <hr>
+               <div>SaFa (Ours)</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_music\SaFa\A_modern_synthesizer_4x10.24s.png" width="100%" height="100px" class="center" />
+               </figure>
+               <audio controls="controls" style="width: 100%; margin-top: 0;">
+                 <source src="media\audio\compare_music\SaFa\A_modern_synthesizer_4x10.24s.wav" />Your browser does not support the audio element.
+               </audio>
+             </td>
+            
+             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <br>
+              <div>Acoustic ballad with heartfelt lyrics and soft piano.</div>
+              <hr>
+              <div>SaFa (Ours)</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_music\SaFa\Acoustic_ballad_with_4x10.24s.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_music\SaFa\Acoustic_ballad_with_4x10.24s.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+           </tr>
+  
+           
+           <tr style="padding: 0px;border: none;">    
+            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+              
+              <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_music\MD\A_modern_synthesizer_4x10.24s.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_music\MD\A_modern_synthesizer_4x10.24s.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+  
+            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+             <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                 <img src="media\audio\compare_music\MD\Acoustic_ballad_with_4x10.24s.png" width="100%" height="100px" class="center" />
+             </figure>
+             <audio controls="controls" style="width: 100%; margin-top: 0;">
+               <source src="media\audio\compare_music\MD\Acoustic_ballad_with_4x10.24s.wav" />Your browser does not support the audio element.
+             </audio>
+           </td>
+          </tr>
+  
+          <tr style="padding: 0px;border: none;">    
+            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+              <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                  <img src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.png" width="100%" height="100px" class="center" />
+              </figure>
+              <audio controls="controls" style="width: 100%; margin-top: 0;">
+                <source src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.wav" />Your browser does not support the audio element.
+              </audio>
+            </td>
+  
+            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+             <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                 <img src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.png" width="100%" height="100px" class="center" />
+             </figure>
+             <audio controls="controls" style="width: 100%; margin-top: 0;">
+               <source src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.wav" />Your browser does not support the audio element.
+             </audio>
+           </td>
+          </tr>
+  
+          </tbody>
+        </table>
+       </div> 
+  
+        <!-- Panorama -->
+  
+        <div class="vr-image-wrap"  >
+          <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
+            <tbody>
+              <tr style="padding: 0px;border: none;">    
+                <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                 <div>A photo of a snowy mountain peak with skiers.</div>
+                 <hr>
+                  <div>SaFa (Ours)</div>
+                  <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                      <img src="media\audio\compare_img\SaFa\A photo of a snowy mountain peak with skiers_1.png" width="100%" height="100px" class="center" />
+                  </figure>
+                </td>
+               
+                <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                 <div>A photo of a city skyline at night.</div>
+                 <hr>
+                 <div>SaFa (Ours)</div>
+                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                     <img src="media\audio\compare_img\SaFa\A photo of a city skyline at night_490.png" width="100%" height="100px" class="center" />
+                 </figure>
+               </td>
+              </tr>
+    
+              
+              <tr style="padding: 0px;border: none;">    
+               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                 
+                 <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                     <img src="media\audio\compare_img\MD\A photo of a snowy mountain peak with skiers_27.png" width="100%" height="100px" class="center" />
+                 </figure>
+               </td>
+    
+               <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MD\A photo of a city skyline at night_16.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+             </tr>
+             
+             
+             
+             <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>SyncDiffusion [Lee et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\Sync\A photo of a snowy mountain peak with skiers_20.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+   
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>SyncDiffusion [Lee et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_img\Sync\A photo of a city skyline at night_11.png" width="100%" height="100px" class="center" />
+               </figure>
+             </td>
+            </tr>
+  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MAD\A photo of a snowy mountain peak with skiers_13.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+   
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_img\MAD\A photo of a city skyline at night_10.png" width="100%" height="100px" class="center" />
+               </figure>
+             </td>
+            </tr>
+  
+    
+    
+             <tr style="padding: 0px;border: none;">    
+               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                 <br>
+                <div>A photo of a mountain range at twilight.</div>
+                <hr>
+                 <div>SaFa (Ours)</div>
+                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                     <img src="media\audio\compare_img\SaFa\A photo of a mountain range at twilight_1.png" width="100%" height="100px" class="center" />
+                 </figure>
+               </td>
+              
+               <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                 <br>
+                <div>Natural landscape in anime style illustration.</div>
+                <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\SaFa\Natural landscape in anime style illustration_477.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+             </tr>
+    
+             
+             <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                
+                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MD\A photo of a mountain range at twilight_25.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_img\MD\Natural landscape in anime style illustration_7.png" width="100%" height="100px" class="center" />
+               </figure>
+             </td>
+            </tr>
+            
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>SyncDiffusion [Lee et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\Sync\A photo of a mountain range at twilight_13.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>SyncDiffusion [Lee et al. 2023]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_img\Sync\Natural landscape in anime style illustration_28.png" width="100%" height="100px" class="center" />
+               </figure>
+             </td>
+            </tr>
+  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MAD\A photo of a mountain range at twilight_12.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+              
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                   <img src="media\audio\compare_img\MAD\Natural landscape in anime style illustration_3.png" width="100%" height="100px" class="center" />
+               </figure>
+             </td>
+            </tr>
+    
+            </tbody>
+          </table>
+         </div> 
+  
+     </div>
   
   <!-- audio -->
+   <hr>
   <h3 class="title is-3">Audio & Music Generation</h3>
   <div class="container is-max-desktop p360-panorama-wrap">
 
@@ -272,10 +808,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>Casino Ambience, electronic slot machines.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\soundscape\casino_Ambience,_ele_4x8.0s_gr0.4_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\soundscape\casino_Ambience,_ele_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\soundscape\casino_Ambience,_ele_4x8.0s_gr0.4_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\soundscape\casino_Ambience,_ele_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -297,10 +833,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>Smooth, soulful saxophone in a relaxed jazz tune for quiet evenings.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\music\Smooth,_soulful_saxo_4x10.24s_gr0.3_or0.2_m1_0_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\music\Smooth,_soulful_saxo_4x10.24s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\music\Smooth,_soulful_saxo_4x10.24s_gr0.3_or0.2_m1_0_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\music\Smooth,_soulful_saxo_4x10.24s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -310,10 +846,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>This song features a harp playing the main melody. This melody is calming and relaxing. This song can be played in a meditation center. There are no other instruments in this song. There are no voices in this song.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\music\This_song_features_a_4x8.0s_gr0.0_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\music\This_song_features_a_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\music\This_song_features_a_4x8.0s_gr0.0_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\music\This_song_features_a_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -323,10 +859,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>This instrumental song features a flute playing a high pitched melody. The melody starts off with one high pitched staccato note. After a brief pause, the flute plays two ascending notes in which the second note is sustained. Then a third higher note is played followed by a descending run of four more notes and ending on one higher note. There are no other instruments in this song. There is no percussion in this song. This song has a relaxing mood. This song can be played at a meditation center.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\music\This_instrumental_so_4x8.0s_gr0.0_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\music\This_instrumental_so_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\music\This_instrumental_so_4x8.0s_gr0.0_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\music\This_instrumental_so_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -336,10 +872,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>A modern synthesizer creating futuristic soundscapes.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\music\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m1_0_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\music\A_modern_synthesizer_4x10.24s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\music\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m1_0_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\music\A_modern_synthesizer_4x10.24s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -358,10 +894,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>The continuous gurgling sound of bubbles in the water.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\sound_event\the_continuous_gurgl_4x8.0s_gr0.6_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\sound_event\the_continuous_gurgl_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\sound_event\the_continuous_gurgl_4x8.0s_gr0.6_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\sound_event\the_continuous_gurgl_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -371,10 +907,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>The dog's bark is clear and powerful, often indicating alertness or excitement, with varying pitch.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\sound_event\The_dog's_bark_is_cl_4x8.0s_gr0.4_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\sound_event\The_dog's_bark_is_cl_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\sound_event\The_dog's_bark_is_cl_4x8.0s_gr0.4_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\sound_event\The_dog's_bark_is_cl_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -384,10 +920,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>Someone is Whistling.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\sound_event\Someone_is_Whistling_4x8.0s_gr0.4_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\sound_event\Someone_is_Whistling_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\sound_event\Someone_is_Whistling_4x8.0s_gr0.4_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\sound_event\Someone_is_Whistling_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -397,10 +933,10 @@
             <td style="padding: 0px;border: none;" scope="row" width="100%">
               <div>A synth pad is playing a drone sound in the lower mid range. Cymbals are creating atmosphere while a flute/string/brass sound is playing a melody. The whole recording is full of reverb. This song may be playing in a forest documentary.</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\sound_event\A_synth_pad_is_playi_4x8.0s_gr0.2_or0.2_m1_once.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\sound_event\A_synth_pad_is_playi_4x8.0s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\sound_event\A_synth_pad_is_playi_4x8.0s_gr0.2_or0.2_m1_once.wav" />Your browser does not support the audio element.
+                <source src="media\audio\sound_event\A_synth_pad_is_playi_4x8.0s.wav" />Your browser does not support the audio element.
               </audio>
       
             </td>
@@ -460,7 +996,7 @@
 
                     <div class="pp-image">
                         <div class="pp-img-desc">Majestic red rock formations glowing in the sunset.</div>
-                        <img class="pp-indoor-img" src="media\imgs\mountain\Majestic red rock formations g_seed_0_3.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\mountain\Majestic red rock formations g_.png" alt=""  >
                     </div>
 
                 </div>
@@ -474,7 +1010,7 @@
 
                     <div class="pp-image">
                       <div class="pp-img-desc">Create a vibrant landscape inspired by 'Qingming Riverside Scene, with riverside life, famers, tourists, mountains, and traditional buildings.</div>
-                      <img class="pp-indoor-img" src="media\imgs\city\Create a vibrant landscape ins_seed_0_2.png" alt=""  >
+                      <img class="pp-indoor-img" src="media\imgs\city\Create a vibrant landscape ins_.png" alt=""  >
                     </div>
 
                     
@@ -497,12 +1033,12 @@
 
                   <div class="pp-image">
                     <div class="pp-img-desc">A photo of Chinese ink a vibrant landscape with farmers, tourists, mountains, traditional buildings and animal.</div>
-                    <img class="pp-indoor-img" src="media\imgs\painting\A photo of Chinese ink a vibra_seed_2_3.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\painting\A photo of Chinese ink a vibra_.png" alt=""  >
                   </div>
 
                   <div class="pp-image">
                     <div class="pp-img-desc">Silhouette wallpaper of a dreamy scene with shooting stars.</div>
-                    <img class="pp-indoor-img" src="media\imgs\painting\Silhouette wallpaper of a drea_seed_1_0.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\painting\Silhouette wallpaper of a drea_.png" alt=""  >
                   </div>
                   
                   <div class="pp-image">
@@ -521,22 +1057,22 @@
 
                   <div class="pp-image">
                     <div class="pp-img-desc">A photo of a beautiful ocean with coral reef.</div>
-                    <img class="pp-indoor-img" src="media\imgs\water\A photo of a beautiful ocean w_seed_1_3.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\water\A photo of a beautiful ocean w_.png" alt=""  >
                   </div>
 
                   <div class="pp-image">
                     <div class="pp-img-desc">A photo of a lake under the northern lights.</div>
-                    <img class="pp-indoor-img" src="media\imgs\water\A photo of a lake under the no_seed_0_0.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\water\A photo of a lake under the no_.png" alt=""  >
                   </div>
                   
                   <div class="pp-image">
                         <div class="pp-img-desc">A serene sunrise over a misty lake, with soft colors reflecting on the water's surface.</div>
-                        <img class="pp-indoor-img" src="media\imgs\water\A serene sunrise over a misty _seed_2_3.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\water\A serene sunrise over a misty _.png" alt=""  >
                   </div>           
 
                   <div class="pp-image">
                       <div class="pp-img-desc">Magnificent canyon vista with sheer cliffs and winding rivers.</div>
-                      <img class="pp-indoor-img" src="media\imgs\water\Majestic icebergs floating in _seed_2_2.png" alt=""  >
+                      <img class="pp-indoor-img" src="media\imgs\water\Majestic icebergs floating in _.png" alt=""  >
                   </div>
 
                 </div>
@@ -550,17 +1086,17 @@
 
                   <div class="pp-image">
                     <div class="pp-img-desc">A photo of a grassland with animals.</div>
-                    <img class="pp-indoor-img" src="media\imgs\plant\A photo of a grassland with an_seed_0_4.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\plant\A photo of a grassland with an_.png" alt=""  >
                   </div>
                   
                   <div class="pp-image">
                         <div class="pp-img-desc">Community garden with raised beds and flowers.</div>
-                        <img class="pp-indoor-img" src="media\imgs\plant\Community garden with raised b_seed_2_1.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\plant\Community garden with raised b_.png" alt=""  >
                   </div>           
 
                   <div class="pp-image">
                       <div class="pp-img-desc">Serene mountain valley carpeted in vibrant fall foliage.</div>
-                      <img class="pp-indoor-img" src="media\imgs\plant\Serene mountain valley carpete_seed_2_3.png" alt=""  >
+                      <img class="pp-indoor-img" src="media\imgs\plant\Serene mountain valley carpete_.png" alt=""  >
                   </div>
 
                 </div>
@@ -573,494 +1109,7 @@
   </div>
 
 
-   <!-- audio -->
-   <hr>
-   <h3 class="title is-3">Comparison</h3>
-   <div class="container is-max-desktop full-panorama-wrap">
- 
-     <div class="three-button" aria-label="Button group with toggle">
-         <div class="pp-btn indoor"> 
-             <button class="btn btn-outline-dark "  data-section-id="t11">Audio</button>
-         </div>
-         <div class="pp-btn ciy">
-             <button class="btn btn-outline-dark   "  data-section-id="t12" >Music</button>
-         </div>
-         <div class="pp-btn nature">
-             <button class="btn btn-outline-dark   " data-section-id="t13" >Panorama</button>
-         </div>
-     </div>    
-     
-     <!-- Audio -->
-     <div class="vr-image-wrap"  >
-       <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
-         <tbody>
-         
-           <tr style="padding: 0px;border: none;">    
-             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <div>The continuous gurgling sound of bubbles in the water.</div>
-              <hr>
-              
-               <div>Ours</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_audio\SaFa\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
-               </figure>
-               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                 <source src="media\audio\compare_audio\SaFa\The_continuous_gurgl.wav" />Your browser does not support the audio element.
-               </audio>
-             </td>
-            
-             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-              <div>Casino Ambience, electronic slot machines.</div>
-              <hr>
-              <div>Ours</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_audio\SaFa\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
-              </figure>
-              <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_audio\SaFa\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
-              </audio>
-            </td>
-           </tr>
 
-           
-           
-           <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              
-              <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_audio\MD\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
-              </figure>
-              <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_audio\MD\The_continuous_gurgl.wav" />Your browser does not support the audio element.
-              </audio>
-            </td>
-
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_audio\MD\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_audio\MD\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-          </tr>
-
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              
-              <div>MAD [Fabio et al. 2024] </div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_audio\MAD\The_continuous_gurgl.png" width="100%" height="100px" class="center" />
-              </figure>
-              <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_audio\MAD\The_continuous_gurgl.wav" />Your browser does not support the audio element.
-              </audio>
-            </td>
-
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>MAD [Fabio et al. 2024] </div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_audio\MAD\Casino_Ambience,_ele.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_audio\MAD\Casino_Ambience,_ele.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-          </tr>
-
-
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <br>
-             <div>The audience's enthusiastic and passionate cheers and loud whistles in the stadium.</div>
-             <hr>
-              <div>Ours</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_audio\SaFa\The_audience's_enthu.png" width="100%" height="100px" class="center" />
-              </figure>
-              <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_audio\SaFa\The_audience's_enthu.wav" />Your browser does not support the audio element.
-              </audio>
-            </td>
-           
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-              <br>
-             <div>The sound of waves crashing on the beach, with distant kids playing ...</div>
-             <hr>
-             <div>Ours</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_audio\SaFa\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_audio\SaFa\Someone_is_Whistling.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-          </tr>
-
-          
-          <tr style="padding: 0px;border: none;">    
-           <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             
-             <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_audio\MD\The_audience's_enthu.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_audio\MD\The_audience's_enthu.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-
-           <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-            <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_audio\MD\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_audio\MD\Someone_is_Whistling.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-         </tr>
-
-         <tr style="padding: 0px;border: none;">    
-           <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             <div>MAD [Fabio et al. 2024] </div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_audio\MAD\The_audience's_enthu.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_audio\MAD\The_audience's_enthu.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-
-           <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-            <div>MAD [Fabio et al. 2024] </div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_audio\MAD\Someone_is_Whistling.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_audio\MAD\Someone_is_Whistling.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-         </tr>
- 
-         </tbody>
-       </table>
-     </div> 
-
-      <!-- Music -->
-     <div class="vr-image-wrap"  >
-      <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
-        <tbody>
-        
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             <div>Drum and bass track with rapid beats and energetic bass lines.</div>
-             <hr>
-              <div>Ours</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s_gr0.2_or0.2_m1_1_once.png" width="100%" height="100px" class="center" />
-              </figure>
-              <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s_gr0.2_or0.2_m1_1_once.wav" />Your browser does not support the audio element.
-              </audio>
-            </td>
-           
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>Smooth, soulful saxophone in a relaxed jazz tune for quiet evenings.</div>
-             <hr>
-             <div>Ours</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_music\SaFa\Smooth,_soulful_saxo_4x10.24s_gr0.3_or0.2_m1_0_once.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_music\SaFa\Smooth,_soulful_saxo_4x10.24s_gr0.3_or0.2_m1_0_once.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-          </tr>
-
-          
-          <tr style="padding: 0px;border: none;">    
-           <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             
-             <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s_gr0.2_or0.2_m0.5_1_once.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s_gr0.2_or0.2_m0.5_1_once.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-
-           <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-            <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_music\MD\Smooth,_soulful_saxo_4x10.24s_gr0.2_or0.2_m0.5_1_once.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_music\MD\Smooth,_soulful_saxo_4x10.24s_gr0.2_or0.2_m0.5_1_once.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-         </tr>
-
-         <tr style="padding: 0px;border: none;">    
-           <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             <div>MAD [Fabio et al. 2024] </div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-
-           <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-            <div>MAD [Fabio et al. 2024] </div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-         </tr>
-
-
-         <tr style="padding: 0px;border: none;">    
-           <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-             <br>
-            <div>A modern synthesizer creating futuristic soundscapes.</div>
-            <hr>
-             <div>Ours</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_music\SaFa\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m1_0_once.png" width="100%" height="100px" class="center" />
-             </figure>
-             <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_music\SaFa\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m1_0_once.wav" />Your browser does not support the audio element.
-             </audio>
-           </td>
-          
-           <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <br>
-            <div>Acoustic ballad with heartfelt lyrics and soft piano.</div>
-            <hr>
-            <div>Ours</div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_music\SaFa\Acoustic_ballad_with_4x10.24s_gr0.1_or0.2_m1_0_once.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_music\SaFa\Acoustic_ballad_with_4x10.24s_gr0.1_or0.2_m1_0_once.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-         </tr>
-
-         
-         <tr style="padding: 0px;border: none;">    
-          <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-            
-            <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_music\MD\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m0.5_1_once.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_music\MD\A_modern_synthesizer_4x10.24s_gr0.2_or0.2_m0.5_1_once.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-
-          <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-           <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-           <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-               <img src="media\audio\compare_music\MD\Acoustic_ballad_with_4x10.24s_gr0.2_or0.2_m0.5_0_once.png" width="100%" height="100px" class="center" />
-           </figure>
-           <audio controls="controls" style="width: 100%; margin-top: 0;">
-             <source src="media\audio\compare_music\MD\Acoustic_ballad_with_4x10.24s_gr0.2_or0.2_m0.5_0_once.wav" />Your browser does not support the audio element.
-           </audio>
-         </td>
-        </tr>
-
-        <tr style="padding: 0px;border: none;">    
-          <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-            <div>MAD [Fabio et al. 2024] </div>
-            <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                <img src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.png" width="100%" height="100px" class="center" />
-            </figure>
-            <audio controls="controls" style="width: 100%; margin-top: 0;">
-              <source src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.wav" />Your browser does not support the audio element.
-            </audio>
-          </td>
-
-          <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-           <div>MAD [Fabio et al. 2024] </div>
-           <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-               <img src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.png" width="100%" height="100px" class="center" />
-           </figure>
-           <audio controls="controls" style="width: 100%; margin-top: 0;">
-             <source src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.wav" />Your browser does not support the audio element.
-           </audio>
-         </td>
-        </tr>
-
-        </tbody>
-      </table>
-     </div> 
-
-      <!-- Panorama -->
-
-      <div class="vr-image-wrap"  >
-        <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
-          <tbody>
-            <tr style="padding: 0px;border: none;">    
-              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-               <div>A photo of a snowy mountain peak with skiers.</div>
-               <hr>
-                <div>Ours</div>
-                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\SaFa\A photo of a snowy mountain peak with skiers_1.png" width="100%" height="100px" class="center" />
-                </figure>
-              </td>
-             
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>A photo of a city skyline at night.</div>
-               <hr>
-               <div>Ours</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\SaFa\A photo of a city skyline at night_490.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-            </tr>
-  
-            
-            <tr style="padding: 0px;border: none;">    
-             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-               
-               <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\MD\A photo of a snowy mountain peak with skiers_27.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-  
-             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-              <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\MD\A photo of a city skyline at night_16.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
-           </tr>
-           
-           
-           
-           <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <div>SyncDiffusion [Lee et al. 2023]</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\Sync\A photo of a snowy mountain peak with skiers_20.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
- 
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>SyncDiffusion [Lee et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_img\Sync\A photo of a city skyline at night_11.png" width="100%" height="100px" class="center" />
-             </figure>
-           </td>
-          </tr>
-
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <div>MAD [Fabio et al. 2024] </div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\MAD\A photo of a snowy mountain peak with skiers_13.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
- 
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>MAD [Fabio et al. 2024] </div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_img\MAD\A photo of a city skyline at night_10.png" width="100%" height="100px" class="center" />
-             </figure>
-           </td>
-          </tr>
-
-  
-  
-           <tr style="padding: 0px;border: none;">    
-             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-               <br>
-              <div>A photo of a mountain range at twilight.</div>
-              <hr>
-               <div>Ours</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\SaFa\A photo of a mountain range at twilight_1.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-            
-             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <br>
-              <div>Natural landscape in anime style illustration.</div>
-              <hr>
-              <div>Ours</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\SaFa\Natural landscape in anime style illustration_477.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
-           </tr>
-  
-           
-           <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              
-              <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\MD\A photo of a mountain range at twilight_25.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
-  
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>MultiDiffusion [Bar-Tal et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_img\MD\Natural landscape in anime style illustration_7.png" width="100%" height="100px" class="center" />
-             </figure>
-           </td>
-          </tr>
-          
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <div>SyncDiffusion [Lee et al. 2023]</div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\Sync\A photo of a mountain range at twilight_13.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
-  
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>SyncDiffusion [Lee et al. 2023]</div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_img\Sync\Natural landscape in anime style illustration_28.png" width="100%" height="100px" class="center" />
-             </figure>
-           </td>
-          </tr>
-
-          <tr style="padding: 0px;border: none;">    
-            <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-              <div>MAD [Fabio et al. 2024] </div>
-              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_img\MAD\A photo of a mountain range at twilight_12.png" width="100%" height="100px" class="center" />
-              </figure>
-            </td>
-            
-            <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-             <div>MAD [Fabio et al. 2024] </div>
-             <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_img\MAD\Natural landscape in anime style illustration_3.png" width="100%" height="100px" class="center" />
-             </figure>
-           </td>
-          </tr>
-  
-          </tbody>
-        </table>
-       </div> 
-
-   </div>
 
 
   <!-- Application -->
