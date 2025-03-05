@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description"  content="Latent Swap Joint Diffusion for Long-Form Audio Generation">
+  <meta name="description"  content="Latent Swap Joint Diffusion for 2D Long-Form Latent Generation">
   <meta name="keywords" content="Swap Forward">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Swap Forward</title>
@@ -27,13 +27,13 @@
 
   <meta property="og:site_name" content="PanoFree" />
   <meta property="og:type" content="video.other" />
-  <meta property="og:title" content="Latent Swap Joint Diffusion for Long-Form Audio Generation" />
+  <meta property="og:title" content="Latent Swap Joint Diffusion for 2D Long-Form Latent Generation" />
   <meta property="og:description" content="SaFa, 2024." />
   <meta property="og:url" content="https://swapforward.github.io/" />
 
   <meta property="article:publisher" content="https://swapforward.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Latent Swap Joint Diffusion for Long-Form Audio Generation" />
+  <meta name="twitter:title" content="Latent Swap Joint Diffusion for 2D Long-Form Latent Generation" />
   <meta name="twitter:url" content="https://swapforward.github.io/" />
 
   <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
@@ -104,7 +104,7 @@
     <div class="container is-max-desktop" style="padding-bottom: 0px;">
        
         <div class="column has-text-centered" style="padding-bottom: 0px;">
-          <h1 class="title is-2 publication-title">Latent Swap Joint Diffusion for Long-Form Audio Generation</h1>
+          <h1 class="title is-2 publication-title">Latent Swap Joint Diffusion for 2D Long-Form Latent Generation</h1>
           <div class="is-size-5">
             <span class="author-block">
               <b>Anonymous</b>
@@ -145,9 +145,12 @@
         <img src="media\paper\Abstract.jpg" alt="">
       <br><br><br>
       <h2 class="subtitle has-text-centered">
-        <strong>Swap Forward (SaFa)</strong> can generate seamless and coherent long-form output (audio and panorama images) by multi-view joint diffusion. 
-        With a forward-only design, it employs just two step-wise latent swap operators, achieving simplicity, efficiency without additional cost, and compatibility with diffusion architectures like U-Net and DiT.
-    </h2>
+        
+        <!-- <strong>Swap Forward (SaFa)</strong> can generate seamless and coherent long-form output (audio and panorama images) by multi-view joint diffusion. 
+        With a forward-only design, it employs just two step-wise latent swap operators, achieving simplicity, efficiency without additional cost, and compatibility with diffusion architectures like U-Net and DiT. -->
+        
+        <strong>Swap Forward (SaFa)</strong> is a modality-agnostic and efficient method for generating seamless and coherent long-form spectrum and panorama through latent swap joint diffusion across multiple views. With a forward-only design, it employs just two stepwise latent swap operators to achieve (1) smooth overlap transitions with more spectral details and (2) global coherence (e.g., color and timbre) witch a cross-view similarity-diversity balance.
+      </h2>
     </div>
   </div>
 </section>
@@ -168,27 +171,35 @@
           
           <p>
             <div class="subtitle">
-              At its core, first, the bidirectional Self-Loop Latent Swap operator performs frame-level swaps on the overlapping regions of adjacent subviews during each denoising step. 
-              The frame-level operation adapts to high-frequency variability in both the spectrum and image latents, achieving higher time-frequency resolution with less distortion compared to latent averaging.
+              At its core, first, the bidirectional <strong>Self-Loop Latent Swap</strong> operator performs frame-level swaps on the overlapping regions of adjacent subviews during each denoising step. The operation adapts well to the high-frequency variability of the spectrum, preserving high-frequency details and avoiding spectrum aliasing. 
+              <!-- At its core, first, the bidirectional Self-Loop Latent Swap operator performs frame-level swaps on the overlapping regions of adjacent subviews during each denoising step. 
+              The frame-level operation adapts to high-frequency variability in both the spectrum and image latents, achieving higher time-frequency resolution with less distortion compared to latent averaging. -->
             </div>
           </p>
 
           <p>
             <div class="subtitle">
-              Second, the unidirectional Reference-Guided Latent Swap occurs between reference and each subview during early steps. 
+              Second, to achieve cross-view consistency, the unidirectional <strong>Reference-Guided Latent Swap</strong> is applied between the reference and each subview during the early steps. It provides an independent centralized trajectory to guide each subview’s diffusion in the early denoising steps. By adjusting the timing and interval of the swap operation, we can balance the similarity-diversity trade-off across subviews in a forward-only manner.
+              <!-- Second, the unidirectional Reference-Guided Latent Swap occurs between reference and each subview during early steps. 
               It leverages an independent reference denoising process to guide other subviews, providing centralized guidance to ensure consistency without repetition across subviews. 
-              Given differences in the flattening orders to 1D sequences, the Reference-Guided Latent Swap is applied along different directions for spectrum and image generation, enabling segment-wise swaps while avoiding excessive repetition.
+              Given differences in the flattening orders to 1D sequences, the Reference-Guided Latent Swap is applied along different directions for spectrum and image generation, enabling segment-wise swaps while avoiding excessive repetition. -->
             </div>
           </p>
-          
+
+          <!-- <p>
+            <div class="subtitle">
+            Through these two latent swap operators, SaFa not only fills the gap for existing joint diffusion methods in long spectrum generation, but also acts as a highly efficient alternative for generating cross-view consistent panoramas with significantly reduced time cost and subview number.
+            </div>
+          </p> -->
+
           <figure>
             <img src="\media\paper\table.png" width="100%" height="100px" class="center" />
           </figure>
           
           <p>
             <div class="subtitle">
-              <strong>Swap Forward</strong> demonstrates strong <strong>generalization</strong> (adapting to both spectrum and image generation, U-Net and DiT architectures, and fixed or flexible attention window sizes), 
-              <strong>simplicity</strong> (using two simple swap operators in a forward-only manner), and <strong>efficiency</strong> (up to 11 times faster without extra time or computation consumption) to generate seamless and coherent long-form outputs.
+              <!-- <strong>Swap Forward</strong> demonstrates strong <strong>generalization</strong> (adapting to both spectrum and image generation, U-Net and DiT architectures, and fixed or flexible attention window sizes), <strong>simplicity</strong> (applying only two latent swap operators in a forward-only manner), and <strong>efficiency</strong> (11~14× faster and 3~4x reduction in subview number) to generate seamless and coherent long-form audio and panorama. -->
+              <strong>Swap Forward</strong> demonstrates strong <strong>generalization</strong> (adapting to both spectrum and image generation, U-Net and DiT architectures, and fixed or flexible attention window sizes), <strong>simplicity</strong> (applying only two latent swap operators in a forward-only manner), and <strong>efficiency</strong> (2 ~ 20× faster inference time with less subview count) to generate seamless and coherent long-form audio and panorama.
             </div>
           </p>
 
@@ -356,6 +367,9 @@
                </audio>
              </td>
             </tr>
+
+
+            
   
             
             <tr style="padding: 0px;border: none;">    
@@ -437,14 +451,14 @@
           
             <tr style="padding: 0px;border: none;">    
               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-               <div>Drum and bass track with rapid beats and energetic bass lines.</div>
+               <div>The instrumental music features an ensemble that resembles the orchestra.</div>
                <hr>
                 <div>SaFa (Ours)</div>
                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s.png" width="100%" height="100px" class="center" />
+                    <img src="media\audio\compare_music\SaFa\The_instrumental_mus.png" width="100%" height="100px" class="center" />
                 </figure>
                 <audio controls="controls" style="width: 100%; margin-top: 0;">
-                  <source src="media\audio\compare_music\SaFa\Drum_and_bass_track__4x10.24s.wav" />Your browser does not support the audio element.
+                  <source src="media\audio\compare_music\SaFa\The_instrumental_mus.wav" />Your browser does not support the audio element.
                 </audio>
               </td>
              
@@ -467,10 +481,10 @@
                
                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s.png" width="100%" height="100px" class="center" />
+                   <img src="media\audio\compare_music\MD\The_instrumental_mus.png" width="100%" height="100px" class="center" />
                </figure>
                <audio controls="controls" style="width: 100%; margin-top: 0;">
-                 <source src="media\audio\compare_music\MD\Drum_and_bass_track__4x10.24s.wav" />Your browser does not support the audio element.
+                 <source src="media\audio\compare_music\MD\The_instrumental_mus.wav" />Your browser does not support the audio element.
                </audio>
              </td>
   
@@ -489,20 +503,20 @@
              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.png" width="100%" height="100px" class="center" />
+                   <img src="media\audio\compare_music\MAD\The_instrumental_mus.png" width="100%" height="100px" class="center" />
                </figure>
                <audio controls="controls" style="width: 100%; margin-top: 0;">
-                 <source src="media\audio\compare_music\MAD\Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines_6274145.wav" />Your browser does not support the audio element.
+                 <source src="media\audio\compare_music\MAD\The_instrumental_mus.wav" />Your browser does not support the audio element.
                </audio>
              </td>
   
              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_4x10.24s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_1801388.wav" />Your browser does not support the audio element.
+                <source src="media\audio\compare_music\MAD\Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings_4x10.24s.wav" />Your browser does not support the audio element.
               </audio>
             </td>
            </tr>
@@ -564,24 +578,28 @@
             <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                  <img src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.png" width="100%" height="100px" class="center" />
+                  <img src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_4x10.24s.png" width="100%" height="100px" class="center" />
               </figure>
               <audio controls="controls" style="width: 100%; margin-top: 0;">
-                <source src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_6305794.wav" />Your browser does not support the audio element.
+                <source src="media\audio\compare_music\MAD\A_modern_synthesizer_creating_futuristic_soundscapes_4x10.24s.wav" />Your browser does not support the audio element.
               </audio>
             </td>
   
             <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
              <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
              <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                 <img src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.png" width="100%" height="100px" class="center" />
+                 <img src="media\audio\compare_music\MAD\Acoustic_ballad_with_4x10.24s.png" width="100%" height="100px" class="center" />
              </figure>
              <audio controls="controls" style="width: 100%; margin-top: 0;">
-               <source src="media\audio\compare_music\MAD\Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano_4327878.wav" />Your browser does not support the audio element.
+               <source src="media\audio\compare_music\MAD\Acoustic_ballad_with_4x10.24s.wav" />Your browser does not support the audio element.
              </audio>
            </td>
           </tr>
-  
+          
+          
+
+
+
           </tbody>
         </table>
        </div> 
@@ -591,151 +609,150 @@
         <div class="vr-image-wrap"  >
           <table class="table text-center" align="center" style="border-collapse: collapse; width: 100%;">
             <tbody>
-              <tr style="padding: 0px;border: none;">    
+            
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>A Chinese ink a vibrant landscape with farmers, tourists.</div>
+                <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\SaFa\A Chinese ink a vibrant landscape with farmers, tourists.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+                <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                  <div>A vibrant landscape inspired by Qingming RiverSide Scence.</div>
+                  <hr>
+                  <div>SaFa (Ours)</div>
+                  <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                      <img src="media\audio\compare_img\SaFa\A vibrant landscape inspired by Qingming RiverSide Scence.png" width="100%" height="100px" class="center" />
+                  </figure>
+                </td>
+                
+                
+            </tr>
+                  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MD\A Chinese ink a vibrant landscape with farmers, tourists.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+                
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                  
+                  <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                  <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                      <img src="media\audio\compare_img\MD\A vibrant landscape inspired by Qingming RiverSide Scence.png" width="100%" height="100px" class="center" />
+                  </figure>
+                </td>
+    
+                
+              </tr>
+                          
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>SyncDiffusion [Lee et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\Sync\A Chinese ink a vibrant landscape with farmers, tourists.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>SyncDiffusion [Lee et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\Sync\A vibrant landscape inspired by Qingming RiverSide Scence.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+            </tr>
+  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MAD\A Chinese ink a vibrant landscape with farmers, tourists.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MAD\A vibrant landscape inspired by Qingming RiverSide Scence.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td> 
+            </tr>
+
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>A photo of a city skyline at night.</div>
+                <hr>
+                <div>SaFa (Ours)</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\SaFa\A photo of a city skyline at night.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
                 <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
                  <div>A photo of a snowy mountain peak with skiers.</div>
                  <hr>
                   <div>SaFa (Ours)</div>
                   <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                      <img src="media\audio\compare_img\SaFa\A photo of a snowy mountain peak with skiers_1.png" width="100%" height="100px" class="center" />
+                      <img src="media\audio\compare_img\SaFa\A photo of a snowy mountain peak with skiers.png" width="100%" height="100px" class="center" />
                   </figure>
                 </td>
                
-                <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-                 <div>A photo of a city skyline at night.</div>
-                 <hr>
-                 <div>SaFa (Ours)</div>
-                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                     <img src="media\audio\compare_img\SaFa\A photo of a city skyline at night_490.png" width="100%" height="100px" class="center" />
-                 </figure>
-               </td>
-              </tr>
-    
-              
-              <tr style="padding: 0px;border: none;">    
-               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
+                
+            </tr>
+                  
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MD\A photo of a city skyline at night.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
+               
+              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
                  
                  <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
                  <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                     <img src="media\audio\compare_img\MD\A photo of a snowy mountain peak with skiers_27.png" width="100%" height="100px" class="center" />
+                     <img src="media\audio\compare_img\MD\A photo of a mountain range at twilight.png" width="100%" height="100px" class="center" />
                  </figure>
                </td>
     
-               <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
+               
+             </tr>
+                          
+            <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>SyncDiffusion [Lee et al. 2023]</div>
                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\MD\A photo of a city skyline at night_16.png" width="100%" height="100px" class="center" />
+                    <img src="media\audio\compare_img\Sync\A photo of a city skyline at night.png" width="100%" height="100px" class="center" />
                 </figure>
               </td>
-             </tr>
-             
-             
-             
-             <tr style="padding: 0px;border: none;">    
+
               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
                 <div>SyncDiffusion [Lee et al. 2023]</div>
                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\Sync\A photo of a snowy mountain peak with skiers_20.png" width="100%" height="100px" class="center" />
+                    <img src="media\audio\compare_img\Sync\A photo of a mountain range at twilight.png" width="100%" height="100px" class="center" />
                 </figure>
               </td>
-   
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>SyncDiffusion [Lee et al. 2023]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\Sync\A photo of a city skyline at night_11.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
             </tr>
   
             <tr style="padding: 0px;border: none;">    
+              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
+                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
+                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
+                    <img src="media\audio\compare_img\MAD\A photo of a city skyline at night.png" width="100%" height="100px" class="center" />
+                </figure>
+              </td>
               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
                 <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\MAD\A photo of a snowy mountain peak with skiers_13.png" width="100%" height="100px" class="center" />
+                    <img src="media\audio\compare_img\MAD\A photo of a mountain range at twilight.png" width="100%" height="100px" class="center" />
                 </figure>
-              </td>
-   
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\MAD\A photo of a city skyline at night_10.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
+              </td> 
             </tr>
-  
-    
-    
-             <tr style="padding: 0px;border: none;">    
-               <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-                 <br>
-                <div>A photo of a mountain range at twilight.</div>
-                <hr>
-                 <div>SaFa (Ours)</div>
-                 <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                     <img src="media\audio\compare_img\SaFa\A photo of a mountain range at twilight_1.png" width="100%" height="100px" class="center" />
-                 </figure>
-               </td>
-              
-               <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-                 <br>
-                <div>Natural landscape in anime style illustration.</div>
-                <hr>
-                <div>SaFa (Ours)</div>
-                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\SaFa\Natural landscape in anime style illustration_477.png" width="100%" height="100px" class="center" />
-                </figure>
-              </td>
-             </tr>
-    
-             
-             <tr style="padding: 0px;border: none;">    
-              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-                
-                <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
-                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\MD\A photo of a mountain range at twilight_25.png" width="100%" height="100px" class="center" />
-                </figure>
-              </td>
-    
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>MultiDiffusion (MD) [Bar-Tal et al. 2023]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\MD\Natural landscape in anime style illustration_7.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-            </tr>
-            
-            <tr style="padding: 0px;border: none;">    
-              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-                <div>SyncDiffusion [Lee et al. 2023]</div>
-                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\Sync\A photo of a mountain range at twilight_13.png" width="100%" height="100px" class="center" />
-                </figure>
-              </td>
-    
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>SyncDiffusion [Lee et al. 2023]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\Sync\Natural landscape in anime style illustration_28.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-            </tr>
-  
-            <tr style="padding: 0px;border: none;">    
-              <td style="padding: 0px;padding-right: 5px;border: none;" scope="row" width="50%">
-                <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
-                <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                    <img src="media\audio\compare_img\MAD\A photo of a mountain range at twilight_12.png" width="100%" height="100px" class="center" />
-                </figure>
-              </td>
-              
-              <td style="padding: 0px;padding-left: 5px;border: none;" scope="row" width="50%">
-               <div>Merge-Attend-Diffuse (MAD) [Fabio et al. 2024]</div>
-               <figure class="image is-fullwidth" style="margin-bottom: 0;margin-top: 0;">
-                   <img src="media\audio\compare_img\MAD\Natural landscape in anime style illustration_3.png" width="100%" height="100px" class="center" />
-               </figure>
-             </td>
-            </tr>
+          
+
     
             </tbody>
           </table>
@@ -981,17 +998,17 @@
                 <div class="pp-images-wrap"  >
                     <div class="pp-image">
                         <div class="pp-img-desc">A photo of a mountain range at twilight.</div>
-                        <img class="pp-indoor-img" src="media\imgs\mountain\A photo of a mountain range at twilight_20.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\mountain\A photo of a mountain range at twilight_.png" alt=""  >
                     </div>
 
                     <div class="pp-image">
                         <div class="pp-img-desc">A photo of a snowy mountain peak with skier.</div>
-                        <img class="pp-indoor-img" src="media\imgs\mountain\A photo of a snowy mountain peak with skiers_4.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\mountain\A photo of a snowy mountain peak with skiers_.png" alt=""  >
                     </div>
 
                     <div class="pp-image">
                         <div class="pp-img-desc">A photo of the dolomites.</div>
-                        <img class="pp-indoor-img" src="media\imgs\mountain\a photo of the dolomites_0.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\mountain\a photo of the dolomites_.png" alt=""  >
                     </div>
 
                     <div class="pp-image">
@@ -1005,7 +1022,7 @@
 
                   <div class="pp-image">
                     <div class="pp-img-desc">Skyline of New York City.</div>
-                    <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City_gr0.2_gl0.5_or0.4_896_1740_5.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City" alt=""  >
                   </div>
 
                     <div class="pp-image">
@@ -1017,14 +1034,14 @@
 
                     <div class="pp-image">
                         <div class="pp-img-desc">Skyline of New York City.</div>
-                        <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City_gr0.3_gl0.5_or0.3_640_2880_6_loopTrue.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City_.png" alt=""  >
                     </div>
 
                     
 
                     <div class="pp-image">
                         <div class="pp-img-desc">A photo of a city skyline at night.</div>
-                        <img class="pp-indoor-img" src="media\imgs\city\A photo of a city skyline at night_490.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\city\A photo of a city skyline at night_.png" alt=""  >
                     </div>
 
                 </div>
@@ -1043,12 +1060,12 @@
                   
                   <div class="pp-image">
                         <div class="pp-img-desc">Natural landscape in anime style illustration.</div>
-                        <img class="pp-indoor-img" src="media\imgs\painting\Natural landscape in anime style illustration_20.png" alt=""  >
+                        <img class="pp-indoor-img" src="media\imgs\painting\Natural landscape in anime style illustration_.png" alt=""  >
                   </div>           
 
                   <div class="pp-image">
                       <div class="pp-img-desc">Cartoon panorama of spring summer beautiful nature.</div>
-                      <img class="pp-indoor-img" src="media\imgs\painting\Cartoon panorama of spring summer beautiful nature_443.png" alt=""  >
+                      <img class="pp-indoor-img" src="media\imgs\painting\Cartoon panorama of spring summer beautiful nature_.png" alt=""  >
                   </div>
 
                 </div>
@@ -1081,7 +1098,7 @@
 
                   <div class="pp-image">
                     <div class="pp-img-desc">A photo of a forest with a misty fog.</div>
-                    <img class="pp-indoor-img" src="media\imgs\plant\A photo of a forest with a misty fog_493.png" alt=""  >
+                    <img class="pp-indoor-img" src="media\imgs\plant\A photo of a forest with a misty fog_.png" alt=""  >
                   </div>
 
                   <div class="pp-image">
