@@ -7,8 +7,6 @@ function showTaskSection () {
             t11: 0,
             t12: 1,
             t13: 2,
-            t14: 3,
-            t15: 4,
         };
         // hide all
         imgSections.map((index, div) => {
