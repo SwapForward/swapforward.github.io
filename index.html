@@ -99,21 +99,86 @@
 <body>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSrec Format</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .publication-title {
+            margin-bottom: 20px;
+        }
+        .author-block {
+            margin: 0 8px;
+        }
+        .author-name {
+            color: #000000;
+        }
+        .affiliation {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        .equal-contribution {
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
 <section class="hero">
   <div class="hero-body" style="padding-bottom: 0px;">
     <div class="container is-max-desktop" style="padding-bottom: 0px;">
        
         <div class="column has-text-centered" style="padding-bottom: 0px;">
           <h1 class="title is-2 publication-title">Latent Swap Joint Diffusion for 2D Long-Form Latent Generation</h1>
+          <div style="font-size:x-large;">ICCV 2025</div><br>
           <div class="is-size-5">
             <span class="author-block">
-              <b>Anonymous</b>
+              <span class="author-name">Yusheng Dai</span><span class="equal-contribution">1*</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Chenxi Wang</span><span class="equal-contribution">1*</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Chang Li</span><span class="equal-contribution">1</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Chen Wang</span><span class="equal-contribution">2</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Kewei Li</span><span class="equal-contribution">1</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Jun Du</span><span class="equal-contribution">1†</span>,
+            </span>
+            <br>
+            <span class="author-block">
+              <span class="author-name">Lei Sun</span><span class="equal-contribution">3</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Jianqing Gao</span><span class="equal-contribution">3</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Ruoyu Wang</span><span class="equal-contribution">1</span>,
+            </span>
+            <span class="author-block">
+              <span class="author-name">Jiefeng Ma</span><span class="equal-contribution">1</span>
             </span>
           </div>
-          <!-- <div class="column has-text-centered">
+
+          <div class="affiliation">
+            <div><span class="equal-contribution">1</span>University of Science and Technology of China, Hefei, China</div>
+            <div><span class="equal-contribution">2</span>Tsinghua University, Beijing, China <span class="equal-contribution">3</span>iFlytek Research, Hefei, China</div>
+          </div>
+         
+          <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="" target="_blank"
+                <a href="https://arxiv.org/abs/2502.05130" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -121,23 +186,25 @@
                   <span>Paper</span>
                 </a>
               </span>
-    
-
+   
                <span class="link-block">
-                <a href="https://swapforward.github.io/tree/main" target="_blank"
-		   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/dalision/SwapForward" target="_blank"
+       class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span >Code</span>
+                  <span>Code</span>
                   </a>
-              </span> 
+              </span>
             </div>
-          </div> -->
+          </div>
         </div>
     </div>
   </div>
 </section>
+
+</body>
+</html>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -983,12 +1050,6 @@
                     <div class="pp-btn mountain"> 
                         <button class="btn btn-outline-dark active"  data-section-id="t11">Mountain</button>
                     </div>
-                    <div class="pp-btn ciy">
-                        <button class="btn btn-outline-dark   "  data-section-id="t12" >City</button>
-                    </div>
-                    <div class="pp-btn nature">
-                        <button class="btn btn-outline-dark   " data-section-id="t13" >Painting</button>
-                    </div>
                     <div class="pp-btn water">
                       <button class="btn btn-outline-dark   " data-section-id="t14" >Water</button>
                     </div>
@@ -1017,58 +1078,6 @@
                         <div class="pp-img-desc">Majestic red rock formations glowing in the sunset.</div>
                         <img class="pp-indoor-img" src="media\imgs\mountain\Majestic red rock formations g_.png" alt=""  >
                     </div>
-
-                </div>
-                
-                <div class="pp-images-wrap">
-
-                  <div class="pp-image">
-                    <div class="pp-img-desc">Skyline of New York City.</div>
-                    <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City.png" alt=""  >
-                  </div>
-
-                    <div class="pp-image">
-                      <div class="pp-img-desc">Create a vibrant landscape inspired by 'Qingming Riverside Scene, with riverside life, famers, tourists, mountains, and traditional buildings.</div>
-                      <img class="pp-indoor-img" src="media\imgs\city\Create a vibrant landscape ins_.png" alt=""  >
-                    </div>
-
-                    
-
-                    <div class="pp-image">
-                        <div class="pp-img-desc">Skyline of New York City.</div>
-                        <img class="pp-indoor-img" src="media\imgs\city\Skyline of New York City_.png" alt=""  >
-                    </div>
-
-                    
-
-                    <div class="pp-image">
-                        <div class="pp-img-desc">A photo of a city skyline at night.</div>
-                        <img class="pp-indoor-img" src="media\imgs\city\A photo of a city skyline at night_.png" alt=""  >
-                    </div>
-
-                </div>
-
-                <div class="pp-images-wrap">                 
-
-                  <div class="pp-image">
-                    <div class="pp-img-desc">A photo of Chinese ink a vibrant landscape with farmers, tourists, mountains, traditional buildings and animal.</div>
-                    <img class="pp-indoor-img" src="media\imgs\painting\A photo of Chinese ink a vibra_.png" alt=""  >
-                  </div>
-
-                  <div class="pp-image">
-                    <div class="pp-img-desc">Silhouette wallpaper of a dreamy scene with shooting stars.</div>
-                    <img class="pp-indoor-img" src="media\imgs\painting\Silhouette wallpaper of a drea_.png" alt=""  >
-                  </div>
-                  
-                  <div class="pp-image">
-                        <div class="pp-img-desc">Natural landscape in anime style illustration.</div>
-                        <img class="pp-indoor-img" src="media\imgs\painting\Natural landscape in anime style illustration_.png" alt=""  >
-                  </div>           
-
-                  <div class="pp-image">
-                      <div class="pp-img-desc">Cartoon panorama of spring summer beautiful nature.</div>
-                      <img class="pp-indoor-img" src="media\imgs\painting\Cartoon panorama of spring summer beautiful nature_.png" alt=""  >
-                  </div>
 
                 </div>
 
@@ -1119,8 +1128,6 @@
                   </div>
 
                 </div>
-
-
             </div>
 
         </div>
@@ -1129,6 +1136,18 @@
 
 
 
+
+  <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{dai2025latent,
+  title={Latent Swap Joint Diffusion for 2D Long-Form Latent Generation},
+  author={Dai, Yusheng and Wang, Chenxi and Li, Chang and Wang, Chen and Du, Jun and Li, Kewei and Wang, Ruoyu and Ma, Jiefeng and Sun, Lei and Gao, Jianqing},
+  journal={arXiv preprint arXiv:2502.05130},
+  year={2025}
+}</code></pre>
+  </div>
+</section><hr>
 
 
   <!-- Application
